@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `minha-audocao`.`data` (
   `data` DATETIME NOT NULL,
   `hora_inicio` INT NOT NULL,
   `hora_fim` INT NOT NULL,
-  PRIMARY KEY (`iddata`, `idevento`),
+  PRIMARY KEY (`iddata`),
   INDEX `fk_data_evento1_idx` (`idevento` ASC) VISIBLE,
   CONSTRAINT `fk_data_evento1`
     FOREIGN KEY (`idevento`)
